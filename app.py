@@ -88,7 +88,7 @@ if st.button('Predict'):
 	  
 	scaler = StandardScaler()
 	df_scaled = scaler.fit_transform(df)
-	loaded_model = pk.load(open(cwd+filename, 'rb'))
+	loaded_model = pk.load(open(filename, 'rb'))
 	y_pred = loaded_model.predict(df_scaled)
 	if y_pred == 1:
 		st.write("""
