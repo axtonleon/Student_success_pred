@@ -6,7 +6,7 @@ import os
 cwd = os.getcwd()
 
 # save the model to disk
-filename = '\logreg_model.sav'
+filename = 'logreg_model.sav'
 import pandas as pd
 # Mapping of output options to numbers
 education_level_mapping = {
