@@ -47,7 +47,7 @@ course_mapping = {
     "No": 0
 }
 
-st.title("STUDENT PERFORMANCE PREDICTION")
+st.title("STUDENT PERFORMANCE PREDICTION :mortar_board:")
 col1, col2, col3 = st.columns(3)
 with col1:
 	age = st.text_input('Enter your age: ')
@@ -91,12 +91,12 @@ if st.button('Predict'):
 	y_pred = loaded_model.predict(df)
 	if y_pred == 1:
 		st.write("""
-			we predict you going to PASS
+			we predict you going to PASS :grin:
 
 			you on your way to SUCCESS, Keep up the good work
 			""")
 	else:
 		st.write("""
-			we predict you going to FAIL
+			we predict you going to FAIL :sweat:
 
 			Does't look so good, please sit up and seek advice from you lecturers""")
