@@ -72,7 +72,7 @@ if st.button('Predict'):
 
 	# dictionary with list object in values
 	dets = {
-	    'age' : [age],
+	    'age' : [int(age)],
 	    'Medu' : [Medu],
 	    'Fedu' : [Fedu],
 	    'failures' : [failures],
