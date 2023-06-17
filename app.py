@@ -86,10 +86,9 @@ if st.button('Predict'):
 	# creating a Dataframe object 
 	df = pd.DataFrame(dets)
 	  
-	scaler = StandardScaler()
-	df_scaled = scaler.fit_transform(df)
+	
 	loaded_model = pk.load(open(filename, 'rb'))
-	y_pred = loaded_model.predict(df_scaled)
+	y_pred = loaded_model.predict(df)
 	if y_pred == 1:
 		st.write("""
 			we predict you going to PASS
