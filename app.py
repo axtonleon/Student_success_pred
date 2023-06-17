@@ -48,6 +48,7 @@ course_mapping = {
 }
 
 st.title("STUDENT PERFORMANCE PREDICTION :mortar_board:")
+st.info('Please fill the form below', icon="ℹ️")
 col1, col2, col3 = st.columns(3)
 with col1:
 	age = st.text_input('Enter your age: ')
@@ -69,6 +70,8 @@ with col3:
 	higher_yes = course_mapping[higher_yes]
 
 if st.button('Predict'):
+	if age == "":
+		age = 0
 
 	# dictionary with list object in values
 	dets = {
