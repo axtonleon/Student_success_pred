@@ -17,24 +17,24 @@ education_level_mapping = {
 }
 
 failure_mapping = {
-    "very low": 1,
-    "low": 2,
-    "moderate": 3,
-    "high": 4,
-    "very high": 5
+     "very low": 0,
+    "low": 1,
+    "moderate": 2,
+    "high": 3,
+    "very high": 4
 }
 
 goout_mapping = {
-    "very low": 1,
-    "low": 2,
-    "moderate": 3,
-    "high": 4,
-    "very high": 5
+     "very low": 0,
+    "low": 1,
+    "moderate": 2,
+    "high": 3,
+    "very high": 4
 }
 
 sex_mapping = {
-    "Male": 0,
-    "Female": 1
+    "Male": 1,
+    "Female": 0
 }
 
 support_mapping = {
