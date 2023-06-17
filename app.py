@@ -47,7 +47,7 @@ course_mapping = {
     "No": 0
 }
 
-st.title("STUDENT SUCCESS PEDICTOR")
+st.title("STUDENT PERFORMANCE PREDICTION")
 col1, col2, col3 = st.columns(3)
 with col1:
 	age = st.text_input('Enter your age: ')
